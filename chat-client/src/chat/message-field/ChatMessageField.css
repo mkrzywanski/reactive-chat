@@ -1,0 +1,14 @@
+.chat-message-field {
+    border: solid #000;
+    border-color: black;
+    margin: 0 auto;
+    width: 100%;
+    height: 10%;
+}
+
+.chat-text-field {
+    width: 100%; 
+    height: 100%;
+    box-sizing:border-box;
+    resize: none;
+}

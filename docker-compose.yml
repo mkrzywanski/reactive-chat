@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  chat-server:
+    image: chat-server:latest
+    ports:
+      - 8080:8080
+  chat-client:
+    image: chat-client
+    build: ./chat-client
+    ports:
+      - 80:80

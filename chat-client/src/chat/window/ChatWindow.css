@@ -1,0 +1,12 @@
+.chat-window {
+    border: solid #000;
+    border-color: black;
+    border-bottom-width: 0ch;
+    margin: 0 auto;
+    width: 100%;
+    height: 50%;
+}
+
+.chat-message {
+    border-bottom: solid #000 1px;
+}
