@@ -42,12 +42,12 @@ class ChatMessageField extends React.Component {
         return (
             <div>
                 <div className="row chat-message-field">
-                    <textarea className="form-control chat-text-field" value={this.state.value} onChange={this.handleTextChange}></textarea>
-                    <button className="btn btn-light btn-block" onClick={this.send}>Send</button>
+                    <textarea id="messageInput" className="form-control chat-text-field" value={this.state.value} onChange={this.handleTextChange}></textarea>
+                    <button id="sendButton" className="btn btn-light btn-block" onClick={this.send}>Send</button>
                 </div>
                 <div className="row input-group">
                     <span className="input-group-text" id="basic-addon1">UserName</span>
-                    <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" value={this.state.userName} onChange={this.handleUserNameChange} />
+                    <input id="usernameInput" type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" value={this.state.userName} onChange={this.handleUserNameChange} />
                 </div>
             </div>
         );
