@@ -6,13 +6,13 @@ import jest from 'jest-mock';
 describe("ChatMessageField component", () => {
 
     it("should fill in default username", () => {
-        let result = render(<ChatMessageFiled />)
+        const result = render(<ChatMessageFiled />)
 
         expect(result.container.querySelector('#usernameInput').value).toEqual("defaultUser");
     });
 
     it("should be able to change userName", () => {
-        let result = render(<ChatMessageFiled />);
+        const result = render(<ChatMessageFiled />);
         const inputField = result.container.querySelector('#usernameInput');
 
         fireEvent.change(inputField, { target: { value: 'newUser' } })
