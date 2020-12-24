@@ -28,7 +28,6 @@ class ChatApp extends React.Component {
             console.log("clientWebSocket.onerror", error);
         }
         this.clientWebSocket.onmessage = (event) => {
-            console.log(this.state.messages)
             let messagesCopy = this.state.messages.slice();
             messagesCopy.push(JSON.parse(event.data))
             this.setState({
