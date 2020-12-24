@@ -1,18 +1,5 @@
 # reactive-chat
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-<br />
-<p align="center">
-  <h3 align="center">reactive-chat</h3>
-</p>
-
-<!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
@@ -26,9 +13,6 @@
   </ol>
 </details>
 
-
-
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
 This is a sample chat application using reactive programming.
@@ -67,13 +51,11 @@ If you prefer you can run everything with docker.
    ```
    docker-compose up
    ```
-<!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-<!-- CONTACT -->
 ## Contact
 
 Your Name - [@twitter_handle](https://twitter.com/m_krzyw) - michal.krzywanski1@gmail.com
