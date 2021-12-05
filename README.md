@@ -20,7 +20,7 @@ This is a sample chat application using reactive programming.
 ### Built With
 
 * Kotlin
-* Java 14
+* Java 17
 * Spring WebFlux
 * ReactJS
 
