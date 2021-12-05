@@ -1,31 +1,30 @@
-import com.google.cloud.tools.jib.gradle.BaseImageParameters
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
 
-	id("org.springframework.boot").version("2.4.0")
-	id("io.spring.dependency-management").version("1.0.10.RELEASE")
-	id("com.google.cloud.tools.jib").version("2.7.0")
-	kotlin("jvm") version "1.4.20"
-	kotlin("plugin.spring") version "1.4.20"
+	id("org.springframework.boot").version("2.6.1")
+	id("io.spring.dependency-management").version("1.0.11.RELEASE")
+	id("com.google.cloud.tools.jib").version("3.1.4")
+	kotlin("jvm") version "1.6.0"
+	kotlin("plugin.spring") version "1.6.0"
 }
 
 group = "io.mkrzywanski"
 version = "0.0.1-SNAPSHOT"
 
-java.sourceCompatibility = JavaVersion.VERSION_14
+java.sourceCompatibility = JavaVersion.VERSION_17
 
 repositories {
 	mavenCentral()
 }
 
 jib {
-	from.image = "openjdk:14.0.2-jdk"
+	from.image = "openjdk:17.0.1-slim"
 	to.image = project.name
 }
 
 dependencies {
-	implementation("ch.qos.logback:logback-classic:1.2.3")
+	implementation("ch.qos.logback:logback-classic:1.2.7")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
@@ -42,8 +41,8 @@ dependencies {
 
 tasks.withType<KotlinCompile> {
 	kotlinOptions {
-		freeCompilerArgs = listOf("-Xjsr305=strict")
-		jvmTarget = "14"
+//		freeCompilerArgs = listOf("-Xjsr305=strict")
+		jvmTarget = "17"
 	}
 }
 
