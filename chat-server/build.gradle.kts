@@ -36,7 +36,7 @@ dependencies {
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
-	testImplementation("org.glassfish.tyrus.bundles:tyrus-standalone-client:1.9")
+	testImplementation("org.glassfish.tyrus.bundles:tyrus-standalone-client:2.1.2")
 }
 
 tasks.withType<KotlinCompile> {
